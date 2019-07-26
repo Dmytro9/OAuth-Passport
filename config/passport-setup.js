@@ -9,6 +9,6 @@ passport.use(
 			clientID: keys.google.clientID,
 			clientSecter: keys.google.clientSecret
 		},
-		() => {}
+		(accessToken, refreshToken, profile, done) => {}
 	)
 );
