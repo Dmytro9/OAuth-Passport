@@ -7,9 +7,13 @@ app.set('view engine', 'ejs');
 
 // create home route
 app.get('/', (req, res) => {
-  res.render('home');
+	res.render('home');
+});
+
+app.get('/auth/google', (req, res) => {
+	res.render('home');
 });
 
 app.listen(3000, () => {
-  console.log('App listening on port 3000');
+	console.log('App listening on port 3000');
 });
