@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>OAuth Passport</title>
+	<title>Login</title>
 	<style>
 		body {
 			font-family: arial;
@@ -44,21 +44,30 @@
 			color: #333;
 		}
 
+		.google-btn {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			padding: 10px;
+			background: #ff5353;
+		}
+
 	</style>
 </head>
 
 <body>
 	<nav>
 		<ul>
+			<li><a href="/auth/logout">Logout</a></li>
+			<li><a href="/auth/login">Login</a></li>
 			<li><a href="/">Homepage</a></li>
 		</ul>
 	</nav>
 	<header>
-		<h1>OAuth Passport</h1>
-		<h2>Homepage</h2>
+		<h1>Login using...</h1>
 	</header>
 	<main>
-		<p>Made OAuth Passport</p>
+		<a class="google-btn" href="/auth/google">Google+</a>
 	</main>
 </body>
 
