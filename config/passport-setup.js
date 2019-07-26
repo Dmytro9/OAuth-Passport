@@ -3,9 +3,12 @@ const GoogleStrategy = require('passport-google-oauth20');
 const keys = require('./keys');
 
 passport.use(
-	new GoogleStrategy({
-		clientID: keys.google.clientID,
-		clientSecter: keys.google.clientSecret
-	}),
-	() => {}
+	new GoogleStrategy(
+		{
+			callbackURL: 'auth/google/redirect',
+			clientID: keys.google.clientID,
+			clientSecter: keys.google.clientSecret
+		},
+		() => {}
+	)
 );
