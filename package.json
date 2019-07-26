@@ -1,0 +1,24 @@
+{
+  "name": "oauth-passport",
+  "version": "1.0.0",
+  "description": "OAuth-Passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytro9/OAuth-Passport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmytro9/OAuth-Passport/issues"
+  },
+  "homepage": "https://github.com/Dmytro9/OAuth-Passport#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
